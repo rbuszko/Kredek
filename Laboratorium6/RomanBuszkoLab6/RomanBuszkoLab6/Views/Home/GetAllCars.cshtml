@@ -1,0 +1,19 @@
+﻿@model List<RomanBuszkoLab6.Models.CarViewModel>
+
+<h1>Wszystkie samochody</h1>
+
+@foreach(var car in Model)
+{
+<div>
+    <h2>
+        @car.Model
+    </h2>
+    <h4>
+        Producent: @car.Producent
+    </h4>
+    <h4>
+        Cena: @car.Price
+    </h4>
+    <img src="@Url.Content(car.PhotoPath)" alt="@car.Model" />
+</div>
+}

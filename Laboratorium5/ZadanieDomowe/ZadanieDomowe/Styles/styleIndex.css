@@ -1,0 +1,45 @@
+﻿/* Styl formularza logowania */
+#login-form {
+    width: 600px;
+    margin: 10px auto;
+}
+/*Styl etykiety logowania*/
+#login-label{
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+}
+/* Styl wejścia logowania */
+#login-input{
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #797979;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+/* Styl nagłówka strony */
+header {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+}
+/* Styl tekstu pod nagłówkiem */
+body p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+/* Styl wiadomości o błędnym logowaniu */
+#login-error {
+    display: block;
+    margin-left: 20px;
+    color: red;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* Styl przycisku logowania */
+#log-in{
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: -10px:
+}

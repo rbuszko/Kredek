@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model List<ItemViewModel>;
+}
+<!--Główna strona z przedmiotami możliwymi do kupienia-->
+<div class="container">
+    <h2 class="text-center"> Lista produktów</h2>
+    <div class="row row-cols-1 row-cols-md-3">
+        <!--Dla każdego przedmiotu sprzedaży-->
+        @foreach (var item in Model)
+        {
+            <!--Charakterystyka bloczka-->
+            <div class="col mb-4">
+                <div class="card card-color">
+                    <!--Nazwa produktu-->
+                    <h5 class="text-center">@item.Name</h5>
+                    <!--Zdjęcie-->
+                    <img class="align-center" src="@Url.Content(item.PhotoPath)" />
+                    <div class="card-body card-border">
+                        <!--Marka i cena-->
+                        <p class="align-left">@item.Brand</p>
+                        <p class="align-right">@item.Price.ToString("#,##.00 zł")</p>
+                        <div class="align-no"></div>
+                        <!--Przycisk przejścia do szczegłów produktu-->
+                        @Html.ActionLink("Wyświetl", "ItemDescription", "Home", new { selectedItemId = item.Id }, new { @class = "btn btn-secondary", @role = "button" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

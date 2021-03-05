@@ -1,0 +1,42 @@
+﻿@model OrderDetailsViewModel
+<!--Przykład działania TempDate-->
+<div>
+    <h4>Chcesz kupić: @TempData["Name"]? Wybierz detale zakupu.</h4>
+</div>
+
+<!--Formularz Szczegółów-->
+@using (Html.BeginForm("OrderDetails", "Home", FormMethod.Post))
+{
+<div class="form-horizontal distance-top">
+    <h4>Szczegóły zakupu</h4>
+    <hr />
+    <!--Kolor-->
+    <div class="form-group">
+        <h1>Kolor: </h1>
+        <td>
+            @Html.DropDownListFor(m => m.Color, new List<SelectListItem>
+           { new SelectListItem{Text="Niebieski", Value="Niebieski"},
+             new SelectListItem{Text="Czarny", Value="Czarny"},
+            new SelectListItem{Text="Bordowy", Value="Bordowy"},
+            new SelectListItem{Text="Zielony", Value="Zielony"}}, "Losowy kolor")
+        </td>
+    </div>
+    <!--Rozmiar-->
+    <div class="form-group">
+        <h1>Rozmiar: </h1>
+        <td>
+            @Html.DropDownListFor(m => m.Size, new List<SelectListItem>
+           { new SelectListItem{Text="S", Value="S"},
+             new SelectListItem{Text="M", Value="M"},
+            new SelectListItem{Text="L", Value="L"},
+            new SelectListItem{Text="XL", Value="XL"}}, "Losowy rozmiar")
+        </td>
+    </div>
+    <!--Przycisk potwierdzenia Wyboru-->
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Zatwierdź detale" class="btn btn-success" />
+        </div>
+    </div>
+</div>
+}

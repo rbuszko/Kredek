@@ -1,0 +1,26 @@
+﻿@model ItemViewModel
+<!--Bloczek przedmiotu-->
+<div>
+    <!--Dodanie zdjęcia-->
+    <img class="align-left" src="@Url.Content(Model.PhotoPath)" />
+    <div>
+        <!--Dodanie poziomej kreski rodzielającej Nazwe przedmiotu od informacji-->
+        <div style="border-bottom: 2px solid black; ">
+            <h1 class="display-4 font-weight-bold">@Model.Name</h1>
+        </div>
+        <!--Informacje o produkcie-->
+        <div class="distance-top">
+            <h3>Opis produktu: </h3>
+            <p>@Model.Description</p>
+        </div>
+        <!--Cena produktu-->
+        <div class="distance-top">
+            <h3>Cena produktu: @Model.Price.ToString("#,##.00 zł")</h3>
+        </div>
+        <!--Przyciski powrotu do strony głównej i przejścia do strony ze szczegółami produktu-->
+        <div class="distance-top">
+            @Html.ActionLink("Wróć do listy", "Index", "Home", null, new { @class = "align-left btn btn-secondary", @role = "button" })
+            @Html.ActionLink("Kup", "OrderDetails", "Home", null, new { @class = "align-right btn btn-secondary", @role = "button" })
+        </div>
+    </div>
+</div>

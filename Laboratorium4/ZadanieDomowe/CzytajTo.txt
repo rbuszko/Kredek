@@ -1,0 +1,5 @@
+Nie wiem z jakiego powodu, jednak gdy otwieram skrypt w mysqlserver i zjade do polowy,
+to aplikacja mi sie crashuje. Mam nadzieje, ze nie bedzie wam to przeszkadzalo we wczytaniu bazy.
+Jednak gdyby byl jakis problem, to sprobuje to naprawic. W takim przypadku prosze o informacje zwrotna.
+Dziekuje serdecznie, zycze wam Szczesliwego Nowego Roku.
+Pozdrawiam Roman Buszko.

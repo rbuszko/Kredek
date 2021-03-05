@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Find Pairs!</title>
+    <link href="../Styles/styleFindPairs.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- Wygląd strony -->
+<body>
+    <!-- Kontener zawierający grę-->
+    <div>
+        <!-- Kontener zawierający przycisk wyjścia z gry, czasomierz
+    oraz przycisk rozpoczęcia gry-->
+        <div class="settings">
+            <!-- Czasomierz -->
+            <div class="timer">
+                Pozostały czas : <span id="firstGameTimer">60</span> s
+            </div>
+            <!-- Przycisk rozpoczęcia gry -->
+            <button id="first-game-start-button"> Rozpocznij grę </button>
+            <!-- Przycisk wyjścia do okna z grami -->
+            <button id="first-game-leave"> Opuść rozgrywkę </button>
+        </div>
+        <!-- wiersz bloczków -->
+        <div class="row">
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+        </div>
+        <!-- wiersz bloczków -->
+        <div class="row">
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+        </div>
+        <!-- wiersz bloczków -->
+        <div class="row">
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+        </div>
+        <!-- wiersz bloczków -->
+        <div class="row">
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+            <div class="card" onclick="BlockClick(event)"></div>
+        </div>
+    </div>
+    <!-- Podłączenie skryptu do strony -->
+    <script src="../Scripts/scriptFindPairs.js"></script>
+</body>
+</html>

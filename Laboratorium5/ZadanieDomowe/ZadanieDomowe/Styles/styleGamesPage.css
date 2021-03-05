@@ -1,0 +1,11 @@
+﻿/* Styl odpowiadający za wygląd strony */
+body {
+    background-color: black;
+    color: white;
+    width = 80%;
+    font-family: 'Yusei Magic', sans-serif;
+}
+/* Konter odpowiadający za odpowiednie umieszczenie zdjęć i ich opisu */
+.container {
+    text-align: center;
+}

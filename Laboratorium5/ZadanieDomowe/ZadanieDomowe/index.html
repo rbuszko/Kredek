@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Logowanie</title>
+    <link href="styles/styleIndex.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<!-- Wygląd strony -->
+<body>
+    <!-- Kontener z nagłówkiem strony -->
+    <div>
+        <header>
+            Witaj użytkowniku!!!
+        </header>
+        <p>
+            Czy byłbyś skłonny podać mi swoje imię?
+        </p>
+    </div>
+    <!-- Formularz logowania -->
+    <form id="login-form">
+        <!-- Kontener z nazwą użytkownika -->
+        <div class="separation">
+            <label id="login-label" for="userName">Nazwa użytkownika:</label>
+            <input id="login-input" type="text" name="userName" placeholder="Wpisz swoją nazwę" />
+            <span id="login-error"></span>
+        </div>
+        <!-- Kontener z przyciskiem logowania -->
+        <div>
+            <button id="log-in" type="button" class="btn btn-dark">Zalouj się</button>
+        </div>
+    </form>
+    <!-- Podłączenie skryptu do strony -->
+    <script src="Scripts/scriptIndex.js"></script>
+</body>
+</html>

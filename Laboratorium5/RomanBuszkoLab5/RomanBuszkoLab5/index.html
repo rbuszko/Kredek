@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Reaktionszeitgeber</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Wygl�d strony -->
+<body>
+
+    <!-- Nag��wek naszej strony -->
+    <header>
+        Test your reaction time!
+    </header>
+
+    <!-- sekcja z przyciskiem i tabel� -->
+    <section>
+        <!-- Kontener z opsiem -->
+        <div id="description">
+            Play 5 rounds of reaction time tester and find out your average reaction time!!!
+        </div>
+
+        <!-- Kontener z przyciskiem do pomiaru -->
+        <div class="left-half">
+            <p>
+                <img id="button-timer" src="images//buttonRed.png" onclick="StartIdle();"/>
+            </p>
+        </div>
+
+        <!-- Kontener z tabel� z wynikami -->
+        <div class="righ-half">
+            <h2>Your times:</h2>
+            <table id="times-table">
+            </table>
+        </div>
+    </section>
+
+    <!-- Pod��czenie skryptu do strony -->
+    <script src="Scripts/script.js"></script>
+    <script>ResetTimes();</script>
+    <script>UpdateTable(0);</script>
+</body>
+</html>

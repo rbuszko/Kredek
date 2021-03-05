@@ -1,0 +1,92 @@
+﻿/* Styl odpowiadający za wygląd strony */
+body {
+    background: black;
+    color: white;
+    font-size: 25px;
+}
+/* Styl odpowiadający za wyśrodkowanie rzędów */
+.row{
+    text-align: center;
+}
+/* Styl odpowiadający za wygląd okna z opcjami */
+.settings {
+    width: 600px;
+    margin: 100px auto;
+    border: 3px dotted #ccc;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* Styl odpowiadający za odpowiednie przesunięcie okna czasu */
+.timer {
+    position: relative;
+    right: -150px;
+}
+/* Styl odpowiadający za odpowiednie przesunięcie przycisku rozpoczęcia gry */
+#first-game-start-button {
+    position: relative;
+    bottom: -80px;
+    right: 20px;
+}
+/* Styl odpowiadający za odpowiednie przesunięcie przycisku powrotu do okna gier */
+#first-game-leave {
+    position: relative;
+    top: -100px;
+    right: -300px;
+}
+/* Styl odpowiadający za wygląd przycisków w kontenerze opcji */
+.settings button {
+    color: #0099CC;
+    background-color: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+/* Styl odpowiadający za bloczki */
+.card{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    cursor: pointer;
+}
+/* Styl odpowiadający za podświetelnie bloczku, na który najeżdżamy */
+.card:hover{
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+/* Styl wyłączający sparowane karty */
+.card.done{
+    border: none;
+    cursor: default;
+}
+/* Kolory bloków */
+.red{
+    background-color: darkred;
+}
+.yellow{
+    background-color: lightgoldenrodyellow;
+}
+.green{
+    background-color: forestgreen;
+}
+.blue{
+    background-color: cornflowerblue;
+}
+.orange{
+    background-color: orangered;
+}
+.violet{
+    background-color: darkviolet;
+}
+.pink{
+    background-color:mediumvioletred;
+}
+.brown{
+    background-color:saddlebrown;
+}
+/* Funkcja odpowiadająca za schowanie karty */
+.hide {
+    background-color: #eee;
+}

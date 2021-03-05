@@ -1,0 +1,64 @@
+﻿/* Styl całego ciała strony */
+body {
+    background-color: black;
+}
+
+/* Styl nagłówka strony */
+header{
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+/* Styl sekcji na stronie */
+section{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    float: left;
+}
+
+/* Styl akapitu w sekcji */
+section p {
+    text-align: center;
+}
+
+/* Styl klasy zajmujący lewą połowę */
+.left-half{
+    width: 50%;
+    float: left;
+}
+
+/* Styl klasy zajmujący prawą połowę */
+.righ-half{
+    width: 50%;
+    float: right;
+}
+
+/* Styl opisu strony */
+#description{
+    font-size: 30px;
+    text-align: center;
+    color: rebeccapurple;
+}
+
+/* Styl przycisku do pomiaru */
+#button-timer{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+/* Styl tabeli z wynikami */
+#times-table{
+    width: 90%;
+    background-color: darkgray;
+}
+
+#times-table th, #times-table td{
+    border: 1px, solid white;
+    text-align: left;
+    padding: 15px;
+}
